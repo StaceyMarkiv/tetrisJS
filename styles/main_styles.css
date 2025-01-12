@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(158, 229, 241);
+
+}
+
+#main {
+    width: 630px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
+
+.game-field {
+    margin: 5px;
+    background: linear-gradient(45deg, rgb(45, 165, 245), rgb(181, 228, 243));
+    border: 10px solid transparent;
+}
+
+.control-panel {
+    margin: 5px 5px 0px 5px;
+    padding: 5px;
+    border: 2px dashed blue ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: blue;
+    font-weight: bold;
+}
+
+.score-label {
+    /* width: 100px; */
+    font-size: 16pt;
+    text-align: end;
+    padding: 6px 5px;
+}
+.tetris-button {
+    background-color: blue;
+    width: 80px;
+    color: white;
+    font-weight: bold;
+}
+
+.disabled-button {
+    background-color: rgb(190, 190, 190);
+}

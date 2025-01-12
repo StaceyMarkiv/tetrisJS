@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Тетрис </title>
+    <link rel="shortcut icon" type="image/png" href="images/tetris.png" />
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <script type="text/javascript" src="tetris.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="tetris-control" class="control-panel">
+            <input type="button" value="Старт" id="tetris-start-button" class="tetris-button"
+                onclick="startTetrisGame()">
+            <input type="button" value="Пауза" id="tetris-pause-button" class="tetris-button disabled-button"
+                onclick="pauseTetrisGame()" disabled>
+            <fieldset>
+                <input type="radio" name="tetrisLevel" value="easy" checked> Легкий
+                <input type="radio" name="tetrisLevel" value="medium"> Средний
+                <input type="radio" name="tetrisLevel" value="hard"> Сложный
+            </fieldset>
+            <label id="tetris-score-label" class="score-label">Счет: 0</label>
+        </div>
+        <canvas id="tetris-game-field" class="game-field" width="600px" height="750px"></canvas>
+    </div>
+</body>
+
+</html>
